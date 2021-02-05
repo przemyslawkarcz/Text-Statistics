@@ -2,6 +2,7 @@ package org.example;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -72,6 +73,28 @@ public class Calculations {
         }
 
         return characterIntegerMap;
+
+    }
+
+    public void countsTotalNumberOfCharacters() throws FileNotFoundException {
+
+        Map<Character, Integer> characterIntegerMap = countsCharactersOfText();
+
+        Collection<Integer> values = characterIntegerMap.values();
+
+        int charactersTotal = 0;
+
+        Object[] array = values.toArray();
+
+        for (int i = 0; i < array.length; i++) {
+
+            Integer integer = (Integer) array[i];
+
+            charactersTotal = charactersTotal + integer;
+
+        }
+
+        System.out.print("\nTotal number of all characters in text file: " + charactersTotal);
 
     }
 
