@@ -7,11 +7,11 @@ import java.util.Scanner;
 public class DisplayText {
 
     //the method displays original text as it is, but the text is mapping to lines of text
-    public static void displaysOriginalTextMappedToLines () throws FileNotFoundException {
+    public void displaysOriginalTextMappedToLines () throws FileNotFoundException {
 
         int counter = 0;
 
-        File originalFile = new File("C:\\Users\\pkarc\\IdeaProjects\\Character-Counting-App\\src\\main\\resources\\Text.txt");
+        File originalFile = new File("C:\\Users\\pkarc\\IdeaProjects\\Text-Statistics\\src\\main\\resources\\Text.txt");
 
         Scanner textFromFIleThroughScanner = new Scanner(originalFile);
 
