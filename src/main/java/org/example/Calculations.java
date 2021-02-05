@@ -24,7 +24,7 @@ public class Calculations {
 
         }
 
-        System.out.println("No. of lines: " + counter);
+        System.out.println("\nNo. of all lines: " + counter);
 
     }
 
