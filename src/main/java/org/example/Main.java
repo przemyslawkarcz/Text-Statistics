@@ -2,16 +2,17 @@ package org.example;
 
 import java.io.FileNotFoundException;
 
-import static org.example.DisplayText.displaysOriginalTextMappedToLines;
-
 public class Main {
 
     public static void main(String[] args) throws FileNotFoundException {
 
-        //if one want to display the whole original text from Text file mapped to number of lines
-        displaysOriginalTextMappedToLines();
+        //use this method 'displaysOriginalTextMappedToLines' to display the original text in full mapped to number of lines
+        DisplayText displayText = new DisplayText();
+        displayText.displaysOriginalTextMappedToLines();
 
-
+        //use this method 'countsLines' to display the number of lines of the original text
+        Calculations calculations = new Calculations();
+        calculations.countsLines();
 
     }
 
