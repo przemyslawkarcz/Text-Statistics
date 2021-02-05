@@ -14,6 +14,9 @@ public class Main {
         Calculations calculations = new Calculations();
         calculations.countsLines();
 
+        //use this method 'countsCharactersOfText' to count all characters in a text
+        calculations.countsCharactersOfText();
+
     }
 
 }
