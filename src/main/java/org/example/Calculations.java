@@ -28,7 +28,7 @@ public class Calculations {
 
     }
 
-    public void countsCharactersOfText() throws FileNotFoundException {
+    public Map<Character, Integer> countsCharactersOfText() throws FileNotFoundException {
 
         File originalFile = new File("C:\\Users\\pkarc\\IdeaProjects\\Text-Statistics\\src\\main\\resources\\Text.txt");
 
@@ -70,6 +70,8 @@ public class Calculations {
             System.out.println(key + ":" + value);
 
         }
+
+        return characterIntegerMap;
 
     }
 
