@@ -7,17 +7,18 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
 
         //use this method 'displaysOriginalTextMappedToLines' to display the original text in full mapped to number of lines
-        DisplayText displayText = new DisplayText();
-        displayText.displaysOriginalTextMappedToLines();
+        PrintClass printClass = new PrintClass();
+        printClass.printsResultOfMethodDisplaysOriginalTextMappedToLines();
 
         //use this method 'countsLines' to display the number of lines of the original text
-        Calculations calculations = new Calculations();
-        calculations.countsLines();
+        printClass.printsResultOfMethodCountsLines();
 
         //use this method 'countsCharactersOfText' to count all characters in a text
-        //calculations.countsCharactersOfText();
+        printClass.printsResultOfMethodCountsCharactersOfText();
 
-        calculations.countsTotalNumberOfCharacters();
+        //use this method 'countsTotalNumberOfCharacters' to count total numbers of characters in a text
+        printClass.printsResultOfMethodCountsTotalNumberOfCharacters();
+
 
     }
 

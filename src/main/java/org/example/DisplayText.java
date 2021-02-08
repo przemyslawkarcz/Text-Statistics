@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class DisplayText {
 
     //the method displays original text as it is, but the text is mapping to lines of text
-    public void displaysOriginalTextMappedToLines () throws FileNotFoundException {
+    public String displaysOriginalTextMappedToLines () throws FileNotFoundException {
 
         int counter = 0;
 
@@ -15,15 +15,20 @@ public class DisplayText {
 
         Scanner textFromFIleThroughScanner = new Scanner(originalFile);
 
+        String lineOfText = null;
+
+        System.out.println();
         while (textFromFIleThroughScanner.hasNext()){
 
             counter++;
 
-            String lineOfText = textFromFIleThroughScanner.nextLine();
+            lineOfText = textFromFIleThroughScanner.nextLine();
 
             System.out.println("Line " + counter + ": " + lineOfText);
 
         }
+
+        return lineOfText;
 
     }
 

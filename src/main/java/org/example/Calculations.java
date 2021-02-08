@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Calculations {
 
-    public void countsLines () throws FileNotFoundException {
+    public int countsLines () throws FileNotFoundException {
 
         int counter = 0;
 
@@ -25,7 +25,7 @@ public class Calculations {
 
         }
 
-        System.out.println("\nNo. of all lines: " + counter);
+        return counter;
 
     }
 
@@ -62,21 +62,11 @@ public class Calculations {
 
         }
 
-        System.out.println("\nK:V");
-        for (Map.Entry<Character, Integer> map:characterIntegerMap.entrySet()) {
-
-            Character key = map.getKey();
-            Integer value = map.getValue();
-
-            System.out.println(key + ":" + value);
-
-        }
-
         return characterIntegerMap;
 
     }
 
-    public void countsTotalNumberOfCharacters() throws FileNotFoundException {
+    public int countsTotalNumberOfCharacters() throws FileNotFoundException {
 
         Map<Character, Integer> characterIntegerMap = countsCharactersOfText();
 
@@ -94,7 +84,7 @@ public class Calculations {
 
         }
 
-        System.out.print("\nTotal number of all characters in text file: " + charactersTotal);
+        return charactersTotal;
 
     }
 
