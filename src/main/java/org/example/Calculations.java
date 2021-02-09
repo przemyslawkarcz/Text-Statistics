@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 public class Calculations {
 
+    //the method is responsible for counting lines (rows) of original text
     public int countsLines () throws FileNotFoundException {
 
         int counter = 0;
@@ -29,6 +30,7 @@ public class Calculations {
 
     }
 
+    //the method counts all individual characters in text e.g. number of 'a' or 'z' or 'A' or 'Z' or '?' etc ...
     public Map<Character, Integer> countsCharactersOfText() throws FileNotFoundException {
 
         File originalFile = new File("C:\\Users\\pkarc\\IdeaProjects\\Text-Statistics\\src\\main\\resources\\Text.txt");
@@ -66,6 +68,7 @@ public class Calculations {
 
     }
 
+    //the method counts all characters in the text and presents the result as a total number of characters
     public int countsTotalNumberOfCharacters() throws FileNotFoundException {
 
         Map<Character, Integer> characterIntegerMap = countsCharactersOfText();
