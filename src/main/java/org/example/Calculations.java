@@ -91,4 +91,29 @@ public class Calculations {
 
     }
 
+    //the method counts total number of words
+    public int countsTotalWordsNumber() throws FileNotFoundException {
+
+        File originalFile = new File("C:\\Users\\pkarc\\IdeaProjects\\Text-Statistics\\src\\main\\resources\\Text.txt");
+
+        Scanner textFromFileThroughScanner = new Scanner(originalFile);
+
+        String[] s;
+
+        int totalWordsNumber = 0;
+
+        while (textFromFileThroughScanner.hasNextLine()) {
+
+            String lineOfText = textFromFileThroughScanner.nextLine();
+
+            s = lineOfText.split("[ ]");
+
+            totalWordsNumber = totalWordsNumber + s.length;
+
+        }
+
+        return totalWordsNumber;
+
+    }
+
 }

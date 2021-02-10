@@ -27,6 +27,9 @@ public class Main {
         //use this method 'printResultOfMethod .... countsTotalNumberOfCharacters' to count total numbers of all type characters in a text
         printClass.printsResultOfMethodCountsTotalNumberOfCharacters();
 
+        //use this method 'printResultOfMethod .... countsTotalWordsNumber' to count total number of words in text
+        printClass.printsResultOfMethodCountsTotalWordsNumber();
+
 
     }
 
