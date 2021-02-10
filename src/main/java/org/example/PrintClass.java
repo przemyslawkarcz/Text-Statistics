@@ -51,7 +51,7 @@ public class PrintClass {
         Calculations calculations = new Calculations();
         int totalNumberOfCharacters = calculations.countsTotalNumberOfCharacters();
 
-        System.out.print("\nTotal number of all characters in text file: " + totalNumberOfCharacters);
+        System.out.print("\nCharacters total: " + totalNumberOfCharacters);
 
     }
 
@@ -60,7 +60,7 @@ public class PrintClass {
         Calculations calculations = new Calculations();
         int totalWordsNumber = calculations.countsTotalWordsNumber();
 
-        System.out.println("\nTotal words number: " + totalWordsNumber);
+        System.out.println("\nWords total: " + totalWordsNumber);
 
     }
 
