@@ -14,7 +14,7 @@ public class Calculations {
 
         int counter = 0;
 
-        File originalFile = new File("C:\\Users\\pkarc\\IdeaProjects\\Text-Statistics\\src\\main\\resources\\Text.txt");
+        File originalFile = new File("src/main/resources/Text.txt");
 
         Scanner textFromFileThroughScanner = new Scanner(originalFile);
 
@@ -33,7 +33,7 @@ public class Calculations {
     //the method counts all individual characters in text e.g. number of 'a' or 'z' or 'A' or 'Z' or '?' etc ...
     public Map<Character, Integer> countsCharactersOfText() throws FileNotFoundException {
 
-        File originalFile = new File("C:\\Users\\pkarc\\IdeaProjects\\Text-Statistics\\src\\main\\resources\\Text.txt");
+        File originalFile = new File("src/main/resources/Text.txt");
 
         Scanner textFromFileThroughScanner = new Scanner(originalFile);
 
@@ -94,7 +94,7 @@ public class Calculations {
     //the method counts total number of words
     public int countsTotalWordsNumber() throws FileNotFoundException {
 
-        File originalFile = new File("C:\\Users\\pkarc\\IdeaProjects\\Text-Statistics\\src\\main\\resources\\Text.txt");
+        File originalFile = new File("src/main/resources/Text.txt");
 
         Scanner textFromFileThroughScanner = new Scanner(originalFile);
 

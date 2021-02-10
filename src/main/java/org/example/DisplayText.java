@@ -11,7 +11,7 @@ public class DisplayText {
 
         int counter = 0;
 
-        File originalFile = new File("C:\\Users\\pkarc\\IdeaProjects\\Text-Statistics\\src\\main\\resources\\Text.txt");
+        File originalFile = new File("src/main/resources/Text.txt");
 
         Scanner textFromFIleThroughScanner = new Scanner(originalFile);
 
