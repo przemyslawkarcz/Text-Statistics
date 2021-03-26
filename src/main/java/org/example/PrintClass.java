@@ -12,6 +12,7 @@ public class PrintClass {
     //the method prints original text which is mapped to lines (rows)
     public void printsResultOfMethodDisplaysOriginalTextMappedToLines() throws FileNotFoundException {
 
+        System.out.print("* * * Original text mapped to lines * * *");
         DisplayText displayText = new DisplayText();
         displayText.displaysOriginalTextMappedToLines();
 
