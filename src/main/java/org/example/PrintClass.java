@@ -24,7 +24,8 @@ public class PrintClass {
         Calculations calculations = new Calculations();
         int countsLines = calculations.countsLines();
 
-        System.out.println("\nNo. of all lines: " + countsLines);
+        System.out.println("\n* * * The number of lines * * *");
+        System.out.println("Total no. of all lines (rows):" + countsLines);
 
     }
 
