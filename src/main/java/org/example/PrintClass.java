@@ -55,7 +55,8 @@ public class PrintClass {
         Calculations calculations = new Calculations();
         int totalNumberOfCharacters = calculations.countsTotalNumberOfCharacters();
 
-        System.out.print("\nCharacters total: " + totalNumberOfCharacters);
+        System.out.println("\n* * * Characters total * * *");
+        System.out.print("Amount: " + totalNumberOfCharacters);
 
     }
 
