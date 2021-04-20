@@ -1,6 +1,7 @@
 package org.example;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public class Main {
 
@@ -10,9 +11,10 @@ public class Main {
 
     */
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws IOException {
 
         PrintClass printClass = new PrintClass();
+        Report report = new Report();
 
         //use this method to display the original text in full, mapped to number of lines
         printClass.printsResultOfMethodDisplaysOriginalTextMappedToLines();
@@ -28,6 +30,9 @@ public class Main {
 
         //use this method to count total number of words in text
         printClass.printsResultOfMethodCountsTotalWordsNumber();
+
+        //use this method to write the calculated statistics down in report as 'Text-Statistics-Report.txt'
+        report.createsTextStatisticsReport();
 
 
     }
