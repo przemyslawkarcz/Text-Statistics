@@ -60,6 +60,7 @@ public class PrintClass {
 
     }
 
+    //the method prints results of the method 'countsTotalWordsNumber'
     public void printsResultOfMethodCountsTotalWordsNumber() throws FileNotFoundException {
 
         Calculations calculations = new Calculations();
