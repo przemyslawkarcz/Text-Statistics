@@ -1,0 +1,13 @@
+* * * Text-Statistics-Report * * *
+
+* * * The number of lines * * *
+Total no. of all lines (rows): 7
+
+* * * Sum of individual characters * * *
+{ =3, a=1, b=2, c=3, d=4, e=6, f=2, g=2, 7=7, h=6, ,=2}
+
+* * * Characters total * * *
+Amount: 38
+
+* * * Words total * * *
+Amount: 10
