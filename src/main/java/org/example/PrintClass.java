@@ -65,7 +65,8 @@ public class PrintClass {
         Calculations calculations = new Calculations();
         int totalWordsNumber = calculations.countsTotalWordsNumber();
 
-        System.out.println("\nWords total: " + totalWordsNumber);
+        System.out.println("\n\n* * * Words total * * *");
+        System.out.println("Amount: " + totalWordsNumber);
 
     }
 
