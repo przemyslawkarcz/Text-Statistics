@@ -35,7 +35,9 @@ public class PrintClass {
         Calculations calculations = new Calculations();
         Map<Character, Integer> characterIntegerMap = calculations.countsCharactersOfText();
 
-        System.out.println("\nK:V");
+        System.out.println("\n* * * Sum of individual characters * * *");
+        System.out.println("* * * 'C'-character : 'S'-sum of characters * * *");
+        System.out.println("C:S");
         for (Map.Entry<Character, Integer> map:characterIntegerMap.entrySet()) {
 
             Character key = map.getKey();
