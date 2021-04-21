@@ -68,14 +68,14 @@ public class Calculations {
 
     }
 
-    //the method counts all characters in the text and presents the result as a total number of characters
+    //the method counts all characters in the text with spaces and presents the result as a total number of characters
     public int countsNumberOfCharactersWithSpaces() throws FileNotFoundException {
 
         Map<Character, Integer> characterIntegerMap = countsIndividualCharactersOfText();
 
         Collection<Integer> values = characterIntegerMap.values();
 
-        int charactersTotal = 0;
+        int charactersTotalWithSpaces = 0;
 
         Object[] array = values.toArray();
 
@@ -83,11 +83,11 @@ public class Calculations {
 
             Integer integer = (Integer) array[i];
 
-            charactersTotal = charactersTotal + integer;
+            charactersTotalWithSpaces = charactersTotalWithSpaces + integer;
 
         }
 
-        return charactersTotal;
+        return charactersTotalWithSpaces;
 
     }
 
@@ -114,6 +114,47 @@ public class Calculations {
 
         return totalWordsNumber;
 
+    }
+
+    //the method counts total number of spaces
+    public int countsSpacesInText() throws FileNotFoundException {
+
+        File originalFile = new File("src/main/resources/Text.txt");
+
+        Scanner textFromFileThroughScanner = new Scanner(originalFile);
+
+        int counter = 0;
+
+        while (textFromFileThroughScanner.hasNextLine()) {
+
+            String lineOfText = textFromFileThroughScanner.nextLine();
+
+            char[] charArray = lineOfText.toCharArray();
+
+            for (int i = 0; i < charArray.length; i++) {
+
+                char c = charArray[i];
+
+                if (c == ' ') {
+
+                    counter++;
+
+                }
+
+            }
+
+        }
+
+        return counter;
+    }
+
+    public int countsNumberOfCharactersWithoutSpaces() throws FileNotFoundException {
+
+        Calculations calculations = new Calculations();
+        int allCharactersWithSpaces = calculations.countsNumberOfCharactersWithSpaces();
+        int allSpacesInText = calculations.countsSpacesInText();
+
+        return allCharactersWithSpaces - allSpacesInText;
     }
 
 }

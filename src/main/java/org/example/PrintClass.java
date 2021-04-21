@@ -68,6 +68,15 @@ public class PrintClass {
 
     }
 
+    //the method prints results of the method 'countsTotalNumberOfCharactersWithoutSpaces'
+    public void printsResultOfMethodCountsTotalNumberOfCharactersWithoutSpaces() throws FileNotFoundException {
+
+        Calculations calculations = new Calculations();
+        int numberOfCharactersWithoutSpaces = calculations.countsNumberOfCharactersWithoutSpaces();
+
+        System.out.println("Characters (without spaces): " + numberOfCharactersWithoutSpaces);
+    }
+
     public void printFriendlyInitialMessage(){
 
         System.out.println("* * * Text-Statistics * * *");

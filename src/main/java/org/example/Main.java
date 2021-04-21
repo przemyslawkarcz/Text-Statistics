@@ -24,6 +24,9 @@ public class Main {
         //use this method to count total numbers of all type characters in a text
         printClass.printsResultOfTheMethodCountsNumberOfCharactersWithSpaces();
 
+        //use this method to display total number of characters without spaces
+        printClass.printsResultOfMethodCountsTotalNumberOfCharactersWithoutSpaces();
+
         //use this method to display the number of lines of the original text
         printClass.printsResultOfMethodCountsLines();
 
