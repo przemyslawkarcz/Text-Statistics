@@ -24,8 +24,7 @@ public class PrintClass {
         Calculations calculations = new Calculations();
         int countsLines = calculations.countsLines();
 
-        System.out.println("\n* * * The number of lines * * *");
-        System.out.println("Total no. of all lines (rows):" + countsLines);
+        System.out.println("Lines: " + countsLines);
 
     }
 
@@ -33,11 +32,11 @@ public class PrintClass {
     public void printsResultOfMethodCountsCharactersOfText() throws FileNotFoundException {
 
         Calculations calculations = new Calculations();
-        Map<Character, Integer> characterIntegerMap = calculations.countsCharactersOfText();
+        Map<Character, Integer> characterIntegerMap = calculations.countsIndividualCharactersOfText();
 
-        System.out.println("\n* * * Sum of individual characters * * *");
-        System.out.println("* * * 'C'-character : 'S'-sum of characters * * *");
-        System.out.println("C:S");
+        System.out.println("\nCharacters individually: ");
+        System.out.println("C-character : A-amount");
+        System.out.println("C:A");
         for (Map.Entry<Character, Integer> map:characterIntegerMap.entrySet()) {
 
             Character key = map.getKey();
@@ -50,13 +49,12 @@ public class PrintClass {
     }
 
     //the method prints results of the method 'countsTotalNumberOfCharacters'
-    public void printsResultOfMethodCountsTotalNumberOfCharacters() throws FileNotFoundException {
+    public void printsResultOfTheMethodCountsNumberOfCharactersWithSpaces() throws FileNotFoundException {
 
         Calculations calculations = new Calculations();
-        int totalNumberOfCharacters = calculations.countsTotalNumberOfCharacters();
+        int totalNumberOfCharacters = calculations.countsNumberOfCharactersWithSpaces();
 
-        System.out.println("\n* * * Characters total * * *");
-        System.out.print("Amount: " + totalNumberOfCharacters);
+        System.out.println("Characters (with spaces): " + totalNumberOfCharacters);
 
     }
 
@@ -66,8 +64,13 @@ public class PrintClass {
         Calculations calculations = new Calculations();
         int totalWordsNumber = calculations.countsTotalWordsNumber();
 
-        System.out.println("\n\n* * * Words total * * *");
-        System.out.println("Amount: " + totalWordsNumber);
+        System.out.println("\nWords: " + totalWordsNumber);
+
+    }
+
+    public void printFriendlyInitialMessage(){
+
+        System.out.println("* * * Text-Statistics * * *");
 
     }
 

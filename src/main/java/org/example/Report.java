@@ -1,7 +1,6 @@
 package org.example;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -27,10 +26,10 @@ public class Report {
         printWriter.println("Total no. of all lines (rows): " + calculations.countsLines());
 
         printWriter.println("\n* * * Sum of individual characters * * *");
-        printWriter.println(calculations.countsCharactersOfText());
+        printWriter.println(calculations.countsIndividualCharactersOfText());
 
         printWriter.println("\n* * * Characters total * * *");
-        printWriter.println("Amount: " + calculations.countsTotalNumberOfCharacters());
+        printWriter.println("Amount: " + calculations.countsNumberOfCharactersWithSpaces());
 
         printWriter.println("\n* * * Words total * * *");
         printWriter.println("Amount: " + calculations.countsTotalWordsNumber());
