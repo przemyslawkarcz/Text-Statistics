@@ -20,21 +20,12 @@ public class Report {
 
         Calculations calculations = new Calculations();
 
-        printWriter.print("* * * Text-Statistics-Report * * *");
+        printWriter.print("* * * Text-Statistics-Report (.txt) * * *");
 
-        printWriter.println("\n\n* * * The number of lines * * *");
-        printWriter.println("Total no. of all lines (rows): " + calculations.countsLines());
-
-        printWriter.println("\n* * * Sum of individual characters * * *");
-        printWriter.println(calculations.countsIndividualCharactersOfText());
-
-        printWriter.println("\n* * * Characters total * * *");
-        printWriter.println("Amount: " + calculations.countsNumberOfCharactersWithSpaces());
-
-        printWriter.println("\n* * * Words total * * *");
-        printWriter.println("Amount: " + calculations.countsTotalWordsNumber());
-
-
+        printWriter.println("\n\nWords: " + calculations.countsTotalWordsNumber());
+        printWriter.println("Characters (with spaces): " + calculations.countsNumberOfCharactersWithSpaces());
+        printWriter.println("Lines: " + calculations.countsLines());
+        printWriter.println("\nCharacters individually: " + calculations.countsIndividualCharactersOfText());
 
         printWriter.close();
 
