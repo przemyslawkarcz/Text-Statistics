@@ -39,7 +39,7 @@ public class Main {
         report.createsTextStatisticsReport();
 
         //use this method to display the original text in full, mapped to number of lines
-        //printClass.printsResultOfMethodDisplaysOriginalTextMappedToLines();
+        printClass.printsResultOfMethodDisplaysOriginalTextMappedToLines();
 
     }
 

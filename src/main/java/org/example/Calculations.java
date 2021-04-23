@@ -98,17 +98,23 @@ public class Calculations {
 
         Scanner textFromFileThroughScanner = new Scanner(originalFile);
 
-        String[] s;
+        String lineOfText = "";
+
+        String[] split;
 
         int totalWordsNumber = 0;
 
         while (textFromFileThroughScanner.hasNextLine()) {
 
-            String lineOfText = textFromFileThroughScanner.nextLine();
+            lineOfText = textFromFileThroughScanner.nextLine();
 
-            s = lineOfText.split("[ ]");
+            if (!lineOfText.trim().isEmpty()){
 
-            totalWordsNumber = totalWordsNumber + s.length;
+                split = lineOfText.split("[ ]+");
+
+                totalWordsNumber = totalWordsNumber + split.length;
+
+            }
 
         }
 
