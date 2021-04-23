@@ -8,7 +8,7 @@ public class DoCwiczen06 {
 
     public static void main(String[] args) throws FileNotFoundException {
 
-        countsLines();
+        countsParagraphs();
 
     }
 
@@ -24,12 +24,11 @@ public class DoCwiczen06 {
 
         String[] split;
 
+        int totalWordsNumber = 0;
+
         while (textFromFileThroughScanner.hasNextLine()){
 
             lineOfText = textFromFileThroughScanner.nextLine();
-
-            //split = lineOfText.split("^$");
-
 
             if(!lineOfText.trim().isEmpty()){
 
@@ -37,27 +36,56 @@ public class DoCwiczen06 {
 
                 System.out.println("Linia " + counterAllLines + ": " + lineOfText);
 
-                /*if (!lineOfText.equals("blank line")){
+                split = lineOfText.split("[ ]+");
 
-                    //System.out.print(lineOfText);
-
-                }*/
-
+                totalWordsNumber = totalWordsNumber + split.length;
             }
 
 
-            //counterAllLines++;
+        }
 
-            //System.out.println("Linia " + counterAllLines + ": " + lineOfText);
+        System.out.println("Liczba słów: " + totalWordsNumber);
 
-            /*for (String s:split) {
-                System.out.println(s);
-            }*/
+    }
+
+    public static void countsParagraphs() throws FileNotFoundException {
+
+        File originalFile = new File("src/main/resources/Text.txt");
+
+        Scanner textFromFileThroughScanner = new Scanner(originalFile);
+
+        int counterAllLines = 0;
+        int counterFullLines = 0;
+        int counterEmptyLines = 0;
+
+        String lineOfText = "";
+
+        while (textFromFileThroughScanner.hasNextLine()){
+
+            lineOfText = textFromFileThroughScanner.nextLine();
+
+            counterAllLines++;
+
+            if(!lineOfText.trim().isEmpty()){
+
+                counterFullLines++;
+
+                //System.out.println("Linia " + counterFullLines + ": " + lineOfText);
+
+            }else {
+
+                counterEmptyLines++;
+
+                //System.out.println("Linia " + counterEmptyLines + ": " + lineOfText);
+
+            }
 
         }
 
-        System.out.println("L. wszystkich lini z pustymi: " + counterAllLines);
-        //System.out.println("L. wszystkich lini pełnych: " + counterFullLines);
+        System.out.println("L. lini wszystkich: " + counterAllLines);
+        System.out.println("L. lini pełnych: " + counterFullLines);
+        System.out.println("L. lini pustych: " + counterEmptyLines);
+        System.out.println("L. akapitów: ");
 
     }
 
