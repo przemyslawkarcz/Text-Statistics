@@ -25,7 +25,9 @@ public class Report {
         printWriter.println("\n\nWords: " + calculations.countsTotalWordsNumber());
         printWriter.println("Characters (with spaces): " + calculations.countsNumberOfCharactersWithSpaces());
         printWriter.println("Characters (without spaces): " + calculations.countsNumberOfCharactersWithoutSpaces());
-        printWriter.println("Lines: " + calculations.countsLines());
+        printWriter.println("Rows (all): " + calculations.countsLinesOfTextAll());
+        printWriter.println("Rows (with text): " + calculations.countsLinesOfTextFull());
+        printWriter.println("Rows (empty): " + calculations.countsLinesOfTextEmpty());
         printWriter.println("\nCharacters individually: " + calculations.countsIndividualCharactersOfText());
 
         printWriter.close();

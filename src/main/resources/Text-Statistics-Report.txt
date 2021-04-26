@@ -1,8 +1,10 @@
 * * * Text-Statistics-Report (.txt) * * *
 
-Words: 10
-Characters (with spaces): 25
-Characters (without spaces): 20
-Lines: 16
+Words: 16
+Characters (with spaces): 42
+Characters (without spaces): 34
+Rows (all): 19
+Rows (with text): 8
+Rows (empty): 11
 
-Characters individually: { =5, a=2, b=3, c=4, d=5, e=6}
+Characters individually: { =8, a=2, b=3, c=8, d=15, e=6}

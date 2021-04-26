@@ -18,16 +18,6 @@ public class PrintClass {
 
     }
 
-    //the method prints results of the method 'countsLines'
-    public void printsResultOfMethodCountsLines() throws FileNotFoundException {
-
-        Calculations calculations = new Calculations();
-        int countsLines = calculations.countsLines();
-
-        System.out.println("Lines: " + countsLines);
-
-    }
-
     //the method prints results of the method 'countsCharactersOfText'
     public void printsResultOfMethodCountsCharactersOfText() throws FileNotFoundException {
 
@@ -82,6 +72,35 @@ public class PrintClass {
         System.out.println("* * * Text-Statistics * * *");
 
     }
+
+    public void printsResultOfMethodCountsLinesOfTextAll() throws FileNotFoundException {
+
+        Calculations calculations = new Calculations();
+        int linesOfTextAll = calculations.countsLinesOfTextAll();
+
+        System.out.println("Rows (all): " + linesOfTextAll);
+
+    }
+
+    public void printsResultOfMethodCountsLinesOfTextFull() throws FileNotFoundException {
+
+        Calculations calculations = new Calculations();
+        int linesOfTextFull = calculations.countsLinesOfTextFull();
+
+        System.out.println("Rows (with text): " + linesOfTextFull);
+
+    }
+
+    public void printsResultOfMethodCountsLinesOfTextEmpty() throws FileNotFoundException {
+
+        Calculations calculations = new Calculations();
+        int linesOfTextEmpty = calculations.countsLinesOfTextEmpty();
+
+        System.out.println("Rows (empty): " + linesOfTextEmpty);
+
+    }
+
+
 
 
 }

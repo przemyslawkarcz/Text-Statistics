@@ -9,27 +9,6 @@ import java.util.Scanner;
 
 public class Calculations {
 
-    //the method is responsible for counting lines (rows) of original text
-    public int countsLines () throws FileNotFoundException {
-
-        int counter = 0;
-
-        File originalFile = new File("src/main/resources/Text.txt");
-
-        Scanner textFromFileThroughScanner = new Scanner(originalFile);
-
-        while (textFromFileThroughScanner.hasNext()){
-
-            counter++;
-
-            textFromFileThroughScanner.nextLine();
-
-        }
-
-        return counter;
-
-    }
-
     //the method counts all individual characters in text e.g. number of 'a' or 'z' or 'A' or 'Z' or '?' etc ...
     public Map<Character, Integer> countsIndividualCharactersOfText() throws FileNotFoundException {
 
@@ -163,4 +142,108 @@ public class Calculations {
         return allCharactersWithSpaces - allSpacesInText;
     }
 
+    //the method counts all rows of some document i.e. full of text and completely empty
+    public int countsLinesOfTextAll() throws FileNotFoundException {
+
+        File originalFile = new File("src/main/resources/Text.txt");
+
+        Scanner textFromFileThroughScanner = new Scanner(originalFile);
+
+        int counterAllLines = 0;
+        //int counterFullLines = 0;
+        //int counterEmptyLines = 0;
+
+        String lineOfText = "";
+
+        while (textFromFileThroughScanner.hasNextLine()){
+
+            lineOfText = textFromFileThroughScanner.nextLine();
+
+            counterAllLines++;
+
+            /*if(!lineOfText.trim().isEmpty()){
+
+                counterFullLines++;
+
+            }else {
+
+                counterEmptyLines++;
+
+            }*/
+
+        }
+
+        return counterAllLines;
+
+    }
+
+    //the method counts all full rows of some document i.e. fulfilled with et least one character
+    public int countsLinesOfTextFull() throws FileNotFoundException {
+
+        File originalFile = new File("src/main/resources/Text.txt");
+
+        Scanner textFromFileThroughScanner = new Scanner(originalFile);
+
+        //int counterAllLines = 0;
+        int counterFullLines = 0;
+        //int counterEmptyLines = 0;
+
+        String lineOfText = "";
+
+        while (textFromFileThroughScanner.hasNextLine()){
+
+            lineOfText = textFromFileThroughScanner.nextLine();
+
+            //counterAllLines++;
+
+            if(!lineOfText.trim().isEmpty()){
+
+                counterFullLines++;
+
+            }/*else {
+
+                counterEmptyLines++;
+
+            }*/
+
+        }
+
+        return counterFullLines;
+
+    }
+
+    //the method counts all rows of some document which are empty
+    public int countsLinesOfTextEmpty() throws FileNotFoundException {
+
+        File originalFile = new File("src/main/resources/Text.txt");
+
+        Scanner textFromFileThroughScanner = new Scanner(originalFile);
+
+        //int counterAllLines = 0;
+        int counterFullLines = 0;
+        int counterEmptyLines = 0;
+
+        String lineOfText = "";
+
+        while (textFromFileThroughScanner.hasNextLine()){
+
+            lineOfText = textFromFileThroughScanner.nextLine();
+
+            //counterAllLines++;
+
+            if(!lineOfText.trim().isEmpty()){
+
+                counterFullLines++;
+
+            }else {
+
+                counterEmptyLines++;
+
+            }
+
+        }
+
+        return counterEmptyLines;
+
+    }
 }
