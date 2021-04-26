@@ -150,26 +150,12 @@ public class Calculations {
         Scanner textFromFileThroughScanner = new Scanner(originalFile);
 
         int counterAllLines = 0;
-        //int counterFullLines = 0;
-        //int counterEmptyLines = 0;
-
-        String lineOfText = "";
 
         while (textFromFileThroughScanner.hasNextLine()){
 
-            lineOfText = textFromFileThroughScanner.nextLine();
+            textFromFileThroughScanner.nextLine();
 
             counterAllLines++;
-
-            /*if(!lineOfText.trim().isEmpty()){
-
-                counterFullLines++;
-
-            }else {
-
-                counterEmptyLines++;
-
-            }*/
 
         }
 
@@ -184,9 +170,7 @@ public class Calculations {
 
         Scanner textFromFileThroughScanner = new Scanner(originalFile);
 
-        //int counterAllLines = 0;
         int counterFullLines = 0;
-        //int counterEmptyLines = 0;
 
         String lineOfText = "";
 
@@ -194,17 +178,11 @@ public class Calculations {
 
             lineOfText = textFromFileThroughScanner.nextLine();
 
-            //counterAllLines++;
-
             if(!lineOfText.trim().isEmpty()){
 
                 counterFullLines++;
 
-            }/*else {
-
-                counterEmptyLines++;
-
-            }*/
+            }
 
         }
 
@@ -219,7 +197,6 @@ public class Calculations {
 
         Scanner textFromFileThroughScanner = new Scanner(originalFile);
 
-        //int counterAllLines = 0;
         int counterFullLines = 0;
         int counterEmptyLines = 0;
 
@@ -228,8 +205,6 @@ public class Calculations {
         while (textFromFileThroughScanner.hasNextLine()){
 
             lineOfText = textFromFileThroughScanner.nextLine();
-
-            //counterAllLines++;
 
             if(!lineOfText.trim().isEmpty()){
 
