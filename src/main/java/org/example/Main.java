@@ -39,13 +39,13 @@ public class Main {
         //use this method to count all individual characters in a text
         printClass.printsResultOfMethodCountsCharactersOfText();
 
-
-
         //use this method to write the calculated statistics down in report as 'Text-Statistics-Report.txt'
         report.createsTextStatisticsReport();
 
         //use this method to display the original text in full, mapped to number of lines
+        /*
         printClass.printsResultOfMethodDisplaysOriginalTextMappedToLines();
+        */
 
     }
 
