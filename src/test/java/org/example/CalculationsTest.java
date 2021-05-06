@@ -4,14 +4,13 @@ import junit.framework.TestCase;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import java.io.FileNotFoundException;
+import java.util.HashMap;
 import java.util.Map;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class CalculationsTest extends TestCase {
 
     @Test
-    public void testsMethodKeys_CountsIndividualCharactersOfText() throws FileNotFoundException {
+    public void testsIfMethodReturnsCharacterKey_CountsIndividualCharactersOfText() throws FileNotFoundException {
 
         Calculations calculations = new Calculations();
         Map<Character, Integer> characterIntegerMap = calculations.countsIndividualCharactersOfText();
@@ -29,7 +28,7 @@ class CalculationsTest extends TestCase {
     }
 
     @Test
-    public void testsMethodValues_CountsIndividualCharactersOfText() throws FileNotFoundException {
+    public void testsIfMethodReturnsIntegerValues_CountsIndividualCharactersOfText() throws FileNotFoundException {
 
         Calculations calculations = new Calculations();
         Map<Character, Integer> characterIntegerMap = calculations.countsIndividualCharactersOfText();
@@ -43,6 +42,37 @@ class CalculationsTest extends TestCase {
         }
 
         Assertions.assertNotEquals(100000, value);
+
+    }
+
+    @Test
+    public void testsIfReturnedObjectIsMapOfDifferentSize_CountsIndividualCharactersOfText() throws FileNotFoundException {
+
+        Calculations calculations = new Calculations();
+        Map<Character, Integer> characterIntegerMap = calculations.countsIndividualCharactersOfText();
+
+        HashMap<Character, Integer> hashMap = new HashMap<>();
+        hashMap.put(' ', 80);
+        hashMap.put('a', 20);
+        hashMap.put('b', 30);
+        hashMap.put('c', 80);
+        hashMap.put('d', 150);
+        hashMap.put('e', 60);
+        hashMap.put('f', 70);
+        hashMap.put('g', 80);
+        hashMap.put('h', 90);
+
+        Assertions.assertNotEquals(hashMap, characterIntegerMap);
+
+    }
+
+    @Test
+    public void testsIfReturnedObjectIsNotNull_CountsIndividualCharactersOfText() throws FileNotFoundException {
+
+        Calculations calculations = new Calculations();
+        Map<Character, Integer> characterIntegerMap = calculations.countsIndividualCharactersOfText();
+
+        Assertions.assertNotNull(characterIntegerMap);
 
     }
 
