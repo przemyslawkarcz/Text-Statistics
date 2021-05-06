@@ -136,6 +136,26 @@ class CalculationsTest extends TestCase {
 
     }
 
+    @Test
+    public void testsIfMethodReturnsIntegerValues_countsNumberOfCharactersWithoutSpaces()throws FileNotFoundException{
+
+        Calculations calculations = new Calculations();
+        int numberOfCharactersWithoutSpaces = calculations.countsNumberOfCharactersWithoutSpaces();
+
+        Assertions.assertNotEquals(12345678, numberOfCharactersWithoutSpaces);
+
+    }
+
+    @Test
+    public void testsIfReturnedObjectIsNotNull_countsNumberOfCharactersWithoutSpaces()throws FileNotFoundException {
+
+        Calculations calculations = new Calculations();
+        int numberOfCharactersWithoutSpaces = calculations.countsNumberOfCharactersWithoutSpaces();
+
+        Assertions.assertNotNull(numberOfCharactersWithoutSpaces);
+
+    }
+
 
 
 
