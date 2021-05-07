@@ -13,8 +13,9 @@ public class PrintClass {
     public void printsResultOfMethodDisplaysOriginalTextMappedToLines() throws FileNotFoundException {
 
         System.out.print("\n* * * Original text mapped to lines * * *");
-        DisplayText displayText = new DisplayText();
-        displayText.displaysOriginalTextMappedToLines();
+        Calculations calculations = new Calculations();
+
+        calculations.displaysOriginalTextMappedToLines();
 
     }
 

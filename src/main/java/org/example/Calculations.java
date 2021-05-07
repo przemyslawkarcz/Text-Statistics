@@ -212,4 +212,29 @@ public class Calculations {
         return counterEmptyLines;
 
     }
+
+    //the method displays original text as it is, but the text is mapping to lines of text
+    public void displaysOriginalTextMappedToLines () throws FileNotFoundException {
+
+        int counter = 0;
+
+        File originalFile = new File("src/main/resources/Text.txt");
+
+        Scanner textFromFIleThroughScanner = new Scanner(originalFile);
+
+        String lineOfText;
+
+        System.out.println();
+        while (textFromFIleThroughScanner.hasNext()){
+
+            counter++;
+
+            lineOfText = textFromFIleThroughScanner.nextLine();
+
+            System.out.println("Line " + counter + ": " + lineOfText);
+
+        }
+
+    }
+
 }
