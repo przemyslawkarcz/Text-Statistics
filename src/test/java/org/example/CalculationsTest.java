@@ -216,7 +216,4 @@ class CalculationsTest extends TestCase {
 
     }
 
-
-
-
 }
