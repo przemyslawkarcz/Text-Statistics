@@ -42,7 +42,7 @@ public class PrintClass {
     public void printsResultOfTheMethodCountsNumberOfCharactersWithSpaces() throws FileNotFoundException {
 
         Calculations calculations = new Calculations();
-        int totalNumberOfCharacters = calculations.countsNumberOfCharactersWithSpaces();
+        Integer totalNumberOfCharacters = calculations.countsNumberOfCharactersWithSpaces();
 
         System.out.println("Characters (with spaces): " + totalNumberOfCharacters);
 
@@ -52,7 +52,7 @@ public class PrintClass {
     public void printsResultOfMethodCountsTotalWordsNumber() throws FileNotFoundException {
 
         Calculations calculations = new Calculations();
-        int totalWordsNumber = calculations.countsTotalWordsNumber();
+        Integer totalWordsNumber = calculations.countsTotalWordsNumber();
 
         System.out.println("\nWords: " + totalWordsNumber);
 
@@ -62,7 +62,7 @@ public class PrintClass {
     public void printsResultOfMethodCountsTotalNumberOfCharactersWithoutSpaces() throws FileNotFoundException {
 
         Calculations calculations = new Calculations();
-        int numberOfCharactersWithoutSpaces = calculations.countsNumberOfCharactersWithoutSpaces();
+        Integer numberOfCharactersWithoutSpaces = calculations.countsNumberOfCharactersWithoutSpaces();
 
         System.out.println("Characters (without spaces): " + numberOfCharactersWithoutSpaces);
     }
@@ -76,7 +76,7 @@ public class PrintClass {
     public void printsResultOfMethodCountsLinesOfTextAll() throws FileNotFoundException {
 
         Calculations calculations = new Calculations();
-        int linesOfTextAll = calculations.countsLinesOfTextAll();
+        Integer linesOfTextAll = calculations.countsLinesOfTextAll();
 
         System.out.println("Rows (all): " + linesOfTextAll);
 
@@ -85,7 +85,7 @@ public class PrintClass {
     public void printsResultOfMethodCountsLinesOfTextFull() throws FileNotFoundException {
 
         Calculations calculations = new Calculations();
-        int linesOfTextFull = calculations.countsLinesOfTextFull();
+        Integer linesOfTextFull = calculations.countsLinesOfTextFull();
 
         System.out.println("Rows (with text): " + linesOfTextFull);
 
@@ -94,7 +94,7 @@ public class PrintClass {
     public void printsResultOfMethodCountsLinesOfTextEmpty() throws FileNotFoundException {
 
         Calculations calculations = new Calculations();
-        int linesOfTextEmpty = calculations.countsLinesOfTextEmpty();
+        Integer linesOfTextEmpty = calculations.countsLinesOfTextEmpty();
 
         System.out.println("Rows (empty): " + linesOfTextEmpty);
 
