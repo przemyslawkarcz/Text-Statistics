@@ -80,7 +80,7 @@ class CalculationsTest extends TestCase {
     public void testsIfMethodReturnsIntegerValues_CountsNumberOfCharactersWithSpaces() throws FileNotFoundException{
 
         Calculations calculations = new Calculations();
-        int numberOfCharactersWithSpaces = calculations.countsNumberOfCharactersWithSpaces();
+        Integer numberOfCharactersWithSpaces = calculations.countsNumberOfCharactersWithSpaces();
 
         Assertions.assertNotEquals(12345678, numberOfCharactersWithSpaces);
 
@@ -90,7 +90,7 @@ class CalculationsTest extends TestCase {
     public void testsIfReturnedObjectIsNotNull_CountsNumberOfCharactersWithSpaces() throws FileNotFoundException{
 
         Calculations calculations = new Calculations();
-        int numberOfCharactersWithSpaces = calculations.countsNumberOfCharactersWithSpaces();
+        Integer numberOfCharactersWithSpaces = calculations.countsNumberOfCharactersWithSpaces();
 
         Assertions.assertNotNull(numberOfCharactersWithSpaces);
 
@@ -100,7 +100,7 @@ class CalculationsTest extends TestCase {
     public void testsIfMethodReturnsIntegerValues_CountsTotalWordsNumber()throws FileNotFoundException {
 
         Calculations calculations = new Calculations();
-        int totalWordsNumber = calculations.countsTotalWordsNumber();
+        Integer totalWordsNumber = calculations.countsTotalWordsNumber();
 
         Assertions.assertNotEquals(12345678, totalWordsNumber);
 
@@ -110,7 +110,7 @@ class CalculationsTest extends TestCase {
     public void testsIfReturnedObjectIsNotNull_CountsTotalWordsNumber()throws FileNotFoundException {
 
         Calculations calculations = new Calculations();
-        int totalWordsNumber = calculations.countsTotalWordsNumber();
+        Integer totalWordsNumber = calculations.countsTotalWordsNumber();
 
         Assertions.assertNotNull(totalWordsNumber);
 
@@ -120,7 +120,7 @@ class CalculationsTest extends TestCase {
     public void testsIfMethodReturnsIntegerValues_countsSpacesInText()throws FileNotFoundException {
 
         Calculations calculations = new Calculations();
-        int spacesInText = calculations.countsSpacesInText();
+        Integer spacesInText = calculations.countsSpacesInText();
 
         Assertions.assertNotEquals(12345678, spacesInText);
 
@@ -130,7 +130,7 @@ class CalculationsTest extends TestCase {
     public void testsIfReturnedObjectIsNotNull_countsSpacesInText()throws FileNotFoundException {
 
         Calculations calculations = new Calculations();
-        int spacesInText = calculations.countsSpacesInText();
+        Integer spacesInText = calculations.countsSpacesInText();
 
         Assertions.assertNotNull(spacesInText);
 
@@ -140,7 +140,7 @@ class CalculationsTest extends TestCase {
     public void testsIfMethodReturnsIntegerValues_countsNumberOfCharactersWithoutSpaces()throws FileNotFoundException{
 
         Calculations calculations = new Calculations();
-        int numberOfCharactersWithoutSpaces = calculations.countsNumberOfCharactersWithoutSpaces();
+        Integer numberOfCharactersWithoutSpaces = calculations.countsNumberOfCharactersWithoutSpaces();
 
         Assertions.assertNotEquals(12345678, numberOfCharactersWithoutSpaces);
 
@@ -150,7 +150,7 @@ class CalculationsTest extends TestCase {
     public void testsIfReturnedObjectIsNotNull_countsNumberOfCharactersWithoutSpaces()throws FileNotFoundException {
 
         Calculations calculations = new Calculations();
-        int numberOfCharactersWithoutSpaces = calculations.countsNumberOfCharactersWithoutSpaces();
+        Integer numberOfCharactersWithoutSpaces = calculations.countsNumberOfCharactersWithoutSpaces();
 
         Assertions.assertNotNull(numberOfCharactersWithoutSpaces);
 
@@ -160,7 +160,7 @@ class CalculationsTest extends TestCase {
     public void testsIfMethodReturnsIntegerValues_countsLinesOfTextAll()throws FileNotFoundException{
 
         Calculations calculations = new Calculations();
-        int linesOfTextAll = calculations.countsLinesOfTextAll();
+        Integer linesOfTextAll = calculations.countsLinesOfTextAll();
 
         Assertions.assertNotEquals(12345678, linesOfTextAll);
 
@@ -170,7 +170,7 @@ class CalculationsTest extends TestCase {
     public void testsIfReturnedObjectIsNotNull_countsLinesOfTextAll()throws FileNotFoundException {
 
         Calculations calculations = new Calculations();
-        int linesOfTextAll = calculations.countsLinesOfTextAll();
+        Integer linesOfTextAll = calculations.countsLinesOfTextAll();
 
         Assertions.assertNotNull(linesOfTextAll);
 
@@ -180,7 +180,7 @@ class CalculationsTest extends TestCase {
     public void testsIfMethodReturnsIntegerValues_countsLinesOfTextFull()throws FileNotFoundException{
 
         Calculations calculations = new Calculations();
-        int linesOfTextFull = calculations.countsLinesOfTextFull();
+        Integer linesOfTextFull = calculations.countsLinesOfTextFull();
 
         Assertions.assertNotEquals(12345678, linesOfTextFull);
 
@@ -190,7 +190,7 @@ class CalculationsTest extends TestCase {
     public void testsIfReturnedObjectIsNotNull_countsLinesOfTextFull()throws FileNotFoundException {
 
         Calculations calculations = new Calculations();
-        int linesOfTextFull = calculations.countsLinesOfTextFull();
+        Integer linesOfTextFull = calculations.countsLinesOfTextFull();
 
         Assertions.assertNotNull(linesOfTextFull);
 
@@ -200,9 +200,19 @@ class CalculationsTest extends TestCase {
     public void testsIfMethodReturnsIntegerValues_countsLinesOfTextEmpty()throws FileNotFoundException{
 
         Calculations calculations = new Calculations();
-        int linesOfTextEmpty = calculations.countsLinesOfTextEmpty();
+        Integer linesOfTextEmpty = calculations.countsLinesOfTextEmpty();
 
         Assertions.assertNotEquals(12345678, linesOfTextEmpty);
+
+    }
+
+    @Test
+    public void testsIfReturnedObjectIsNotNull_countsLinesOfTextEmpty()throws FileNotFoundException{
+
+        Calculations calculations = new Calculations();
+        Integer linesOfTextEmpty = calculations.countsLinesOfTextEmpty();
+
+        Assertions.assertNotNull(linesOfTextEmpty);
 
     }
 

@@ -24,19 +24,17 @@ public class Calculations {
 
             char[] charArray = lineOfText.toCharArray();
 
-            for (int i = 0; i < charArray.length; i++) {
+            for (char c : charArray) {
 
-                char c = charArray[i];
+                if (!characterIntegerMap.containsKey(c)) {
 
-                if (!characterIntegerMap.containsKey(charArray[i])){
+                    characterIntegerMap.put(c, 1);
 
-                    characterIntegerMap.put(charArray[i], 1);
+                } else {
 
-                }else {
-
-                    Integer counter = characterIntegerMap.get(charArray[i]);
+                    Integer counter = characterIntegerMap.get(c);
                     counter++;
-                    characterIntegerMap.put(charArray[i], counter);
+                    characterIntegerMap.put(c, counter);
                 }
 
             }
@@ -48,7 +46,7 @@ public class Calculations {
     }
 
     //the method counts all characters in the text with spaces and presents the result as a total number of characters
-    public int countsNumberOfCharactersWithSpaces() throws FileNotFoundException {
+    public Integer countsNumberOfCharactersWithSpaces() throws FileNotFoundException {
 
         Map<Character, Integer> characterIntegerMap = countsIndividualCharactersOfText();
 
@@ -58,9 +56,9 @@ public class Calculations {
 
         Object[] array = values.toArray();
 
-        for (int i = 0; i < array.length; i++) {
+        for (Object o : array) {
 
-            Integer integer = (Integer) array[i];
+            Integer integer = (Integer) o;
 
             charactersTotalWithSpaces = charactersTotalWithSpaces + integer;
 
@@ -71,13 +69,13 @@ public class Calculations {
     }
 
     //the method counts total number of words
-    public int countsTotalWordsNumber() throws FileNotFoundException {
+    public Integer countsTotalWordsNumber() throws FileNotFoundException {
 
         File originalFile = new File("src/main/resources/Text.txt");
 
         Scanner textFromFileThroughScanner = new Scanner(originalFile);
 
-        String lineOfText = "";
+        String lineOfText;
 
         String[] split;
 
@@ -102,7 +100,7 @@ public class Calculations {
     }
 
     //the method counts total number of spaces
-    public int countsSpacesInText() throws FileNotFoundException {
+    public Integer countsSpacesInText() throws FileNotFoundException {
 
         File originalFile = new File("src/main/resources/Text.txt");
 
@@ -116,9 +114,7 @@ public class Calculations {
 
             char[] charArray = lineOfText.toCharArray();
 
-            for (int i = 0; i < charArray.length; i++) {
-
-                char c = charArray[i];
+            for (char c : charArray) {
 
                 if (c == ' ') {
 
@@ -133,7 +129,7 @@ public class Calculations {
         return counter;
     }
 
-    public int countsNumberOfCharactersWithoutSpaces() throws FileNotFoundException {
+    public Integer countsNumberOfCharactersWithoutSpaces() throws FileNotFoundException {
 
         Calculations calculations = new Calculations();
         int allCharactersWithSpaces = calculations.countsNumberOfCharactersWithSpaces();
@@ -143,7 +139,7 @@ public class Calculations {
     }
 
     //the method counts all rows of some document i.e. full of text and completely empty
-    public int countsLinesOfTextAll() throws FileNotFoundException {
+    public Integer countsLinesOfTextAll() throws FileNotFoundException {
 
         File originalFile = new File("src/main/resources/Text.txt");
 
@@ -164,7 +160,7 @@ public class Calculations {
     }
 
     //the method counts all full rows of some document i.e. fulfilled with et least one character
-    public int countsLinesOfTextFull() throws FileNotFoundException {
+    public Integer countsLinesOfTextFull() throws FileNotFoundException {
 
         File originalFile = new File("src/main/resources/Text.txt");
 
@@ -172,7 +168,7 @@ public class Calculations {
 
         int counterFullLines = 0;
 
-        String lineOfText = "";
+        String lineOfText;
 
         while (textFromFileThroughScanner.hasNextLine()){
 
@@ -191,26 +187,21 @@ public class Calculations {
     }
 
     //the method counts all rows of some document which are empty
-    public int countsLinesOfTextEmpty() throws FileNotFoundException {
+    public Integer countsLinesOfTextEmpty() throws FileNotFoundException {
 
         File originalFile = new File("src/main/resources/Text.txt");
 
         Scanner textFromFileThroughScanner = new Scanner(originalFile);
 
-        int counterFullLines = 0;
         int counterEmptyLines = 0;
 
-        String lineOfText = "";
+        String lineOfText;
 
         while (textFromFileThroughScanner.hasNextLine()){
 
             lineOfText = textFromFileThroughScanner.nextLine();
 
-            if(!lineOfText.trim().isEmpty()){
-
-                counterFullLines++;
-
-            }else {
+            if(lineOfText.trim().isEmpty()){
 
                 counterEmptyLines++;
 
