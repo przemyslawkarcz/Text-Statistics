@@ -176,6 +176,27 @@ class CalculationsTest extends TestCase {
 
     }
 
+    @Test
+    public void testsIfMethodReturnsIntegerValues_countsLinesOfTextFull()throws FileNotFoundException{
+
+        Calculations calculations = new Calculations();
+        int linesOfTextFull = calculations.countsLinesOfTextFull();
+
+        Assertions.assertNotEquals(12345678, linesOfTextFull);
+
+    }
+
+    @Test
+    public void testsIfReturnedObjectIsNotNull_countsLinesOfTextFull()throws FileNotFoundException {
+
+        Calculations calculations = new Calculations();
+        int linesOfTextFull = calculations.countsLinesOfTextFull();
+
+        Assertions.assertNotNull(linesOfTextFull);
+
+    }
+
+
 
 
 
