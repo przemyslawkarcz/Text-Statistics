@@ -14,6 +14,10 @@ public class Main {
 
         PrintClass printClass = new PrintClass();
         Report report = new Report();
+        Text text = new Text();
+
+        //creates once a new text file in which the text can be saved
+        //text.createsTextFile();
 
         //prints the startup message
         printClass.printFriendlyInitialMessage();
@@ -46,7 +50,7 @@ public class Main {
         /*
         printClass.printsResultOfMethodDisplaysOriginalTextMappedToLines();
         */
-        
+
     }
 
 }
