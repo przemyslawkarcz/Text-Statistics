@@ -6,7 +6,11 @@ public class Main {
 
     /*
 
-    General description of the demo .....
+    Below is a set of methods arranged in the correct and planned order.
+    Calling them will perform all the actions that will contribute to the creation of the text statistics.
+    The text file is Text.txt located in the resources directory, the text in this directory can be edited.
+    The program output is displayed in the console and is also available in a text file with a report
+    named Text-Statistics-Report.txt in the resources directory.
 
     */
 
