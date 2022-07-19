@@ -101,6 +101,24 @@ public class PrintClass {
 
     }
 
+    public void printsResultOfMethodCountsNumberOfVowels() throws FileNotFoundException {
+
+        Calculations calculations = new Calculations();
+        Integer numberOfVowels = calculations.countsNumberOfVowels();
+
+        System.out.println("Vowels: " + numberOfVowels);
+
+    }
+
+    public void printsResultOfMethodCountsNumberOfConsonants() throws FileNotFoundException {
+
+        Calculations calculations = new Calculations();
+        Integer numberOfConsonants = calculations.countsNumberOfConsonants();
+
+        System.out.println("Consonants: " + numberOfConsonants);
+
+    }
+
 
 
 

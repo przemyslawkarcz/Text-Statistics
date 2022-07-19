@@ -28,6 +28,8 @@ public class Report {
         printWriter.println("Rows (all): " + calculations.countsLinesOfTextAll());
         printWriter.println("Rows (with text): " + calculations.countsLinesOfTextFull());
         printWriter.println("Rows (empty): " + calculations.countsLinesOfTextEmpty());
+        printWriter.println("Vowels: " + calculations.countsNumberOfVowels());
+        printWriter.println("Consonants: " + calculations.countsNumberOfConsonants());
         printWriter.println("\nCharacters individually: " + calculations.countsIndividualCharactersOfText());
 
         printWriter.close();

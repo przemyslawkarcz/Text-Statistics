@@ -44,6 +44,12 @@ public class AppRunner {
         //use this method to display the number of empty lines of the original text
         printClass.printsResultOfMethodCountsLinesOfTextEmpty();
 
+        //use this method to display the number of vowels in the text
+        printClass.printsResultOfMethodCountsNumberOfVowels();
+
+        //use this method to display the number of consonants in the text
+        printClass.printsResultOfMethodCountsNumberOfConsonants();
+
         //use this method to count all individual characters in a text
         printClass.printsResultOfMethodCountsCharactersOfText();
 
