@@ -30,6 +30,7 @@ public class Report {
         printWriter.println("Rows (empty): " + calculations.countsLinesOfTextEmpty());
         printWriter.println("Vowels: " + calculations.countsNumberOfVowels());
         printWriter.println("Consonants: " + calculations.countsNumberOfConsonants());
+        printWriter.println("Special signs: " + calculations.countsNumberOfSpecialSigns());
         printWriter.println("\nCharacters individually: " + calculations.countsIndividualCharactersOfText());
 
         printWriter.close();

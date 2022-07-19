@@ -50,6 +50,9 @@ public class AppRunner {
         //use this method to display the number of consonants in the text
         printClass.printsResultOfMethodCountsNumberOfConsonants();
 
+        //use this method to display the number of special signs in the text e.g. ~, !, #, $, %, commas, dots, semicolons, colons, ?, <, >, /, etc.
+        printClass.printsResultOfMethodCountsSpecialSigns();
+
         //use this method to count all individual characters in a text
         printClass.printsResultOfMethodCountsCharactersOfText();
 

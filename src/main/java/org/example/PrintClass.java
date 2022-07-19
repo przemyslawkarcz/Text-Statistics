@@ -119,6 +119,15 @@ public class PrintClass {
 
     }
 
+    public void printsResultOfMethodCountsSpecialSigns() throws FileNotFoundException {
+
+        Calculations calculations = new Calculations();
+        Integer numberOfSpecialSigns = calculations.countsNumberOfSpecialSigns();
+
+        System.out.println("Special signs: " + numberOfSpecialSigns);
+
+    }
+
 
 
 
