@@ -128,7 +128,22 @@ public class PrintClass {
 
     }
 
+    public void printsResultOfMethodCountsCapitalLetters() throws FileNotFoundException {
 
+        Calculations calculations = new Calculations();
+        Integer numberOfCapitalLetters = calculations.countsNumberOfCapitalLetters();
 
+        System.out.println("Uppercase letters: " + numberOfCapitalLetters);
+
+    }
+
+    public void printsResultOfMethodCountsSmallLetters() throws FileNotFoundException {
+
+        Calculations calculations = new Calculations();
+        Integer numberOfSmallLetters = calculations.countsNumberOfSmallLetters();
+
+        System.out.println("Lowercase letters: " + numberOfSmallLetters);
+
+    }
 
 }

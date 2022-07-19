@@ -53,6 +53,12 @@ public class AppRunner {
         //use this method to display the number of special signs in the text e.g. ~, !, #, $, %, commas, dots, semicolons, colons, ?, <, >, /, etc.
         printClass.printsResultOfMethodCountsSpecialSigns();
 
+        //use this method to display number of all capital (uppercase) letters in the text
+        printClass.printsResultOfMethodCountsCapitalLetters();
+
+        //use this method to display number of all small (lowercase) letters in the text
+        printClass.printsResultOfMethodCountsSmallLetters();
+
         //use this method to count all individual characters in a text
         printClass.printsResultOfMethodCountsCharactersOfText();
 

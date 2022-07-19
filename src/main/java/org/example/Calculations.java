@@ -351,4 +351,80 @@ public class Calculations {
 
     }
 
+    //the method displays total number of capital letters in the text
+    public Integer countsNumberOfCapitalLetters()throws FileNotFoundException{
+
+        File originalFile = new File("src/main/resources/Text.txt");
+
+        Scanner textFromFileThroughScanner = new Scanner(originalFile);
+
+        int counterOfCapitalLetters = 0;
+
+        while (textFromFileThroughScanner.hasNextLine()){
+
+            String lineOfText = textFromFileThroughScanner.nextLine();
+
+            char[] charArray = lineOfText.toCharArray();
+
+            char[] capitalLettersArray = {'Q', 'W', 'E', 'Ę', 'R', 'T', 'Y', 'U', 'I', 'O', 'Ó', 'P', 'A', 'Ą', 'S', 'Ś', 'D', 'F', 'G',
+                    'H', 'J', 'K', 'L', 'Ł', 'Z', 'Ź', 'Ż', 'X', 'C', 'Ć', 'V', 'B', 'N', 'Ń', 'M'};
+
+            for (int i = 0; i < charArray.length; i++) {
+
+                for (int j = 0; j < capitalLettersArray.length; j++) {
+
+                    if (charArray[i] == capitalLettersArray[j]){
+
+                        counterOfCapitalLetters++;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        return counterOfCapitalLetters;
+
+    }
+
+    //the method displays total number of capital letters in the text
+    public Integer countsNumberOfSmallLetters()throws FileNotFoundException{
+
+        File originalFile = new File("src/main/resources/Text.txt");
+
+        Scanner textFromFileThroughScanner = new Scanner(originalFile);
+
+        int counterOfSmallLetters = 0;
+
+        while (textFromFileThroughScanner.hasNextLine()){
+
+            String lineOfText = textFromFileThroughScanner.nextLine();
+
+            char[] charArray = lineOfText.toCharArray();
+
+            char[] smallLettersArray = {'q', 'w', 'e', 'ę', 'r', 't', 'y', 'u', 'i', 'o', 'ó', 'p', 'a', 'ą', 's', 'ś', 'd', 'f', 'g',
+                    'h', 'j', 'k', 'l', 'ł', 'z', 'ź', 'ż', 'x', 'c', 'ć', 'v', 'b', 'n', 'ń', 'm'};
+
+            for (int i = 0; i < charArray.length; i++) {
+
+                for (int j = 0; j < smallLettersArray.length; j++) {
+
+                    if (charArray[i] == smallLettersArray[j]){
+
+                        counterOfSmallLetters++;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        return counterOfSmallLetters;
+
+    }
+
 }
