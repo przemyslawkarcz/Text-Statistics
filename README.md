@@ -4,7 +4,7 @@ The purpose of the application is to create a statistical summary of text files,
 
 To start, go to the AppRunner class.
 
-Technologies used in the project are: IDE - IntelliJ Idea Community; Maven; Java - 1.8; TDD.
+Technologies used in the project are: IDE - IntelliJ Idea Community; Maven; Java - 1.8; TDD; Design pattern - Facade.
 
 Contact data:
 
