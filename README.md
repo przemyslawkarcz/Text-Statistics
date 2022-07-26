@@ -6,6 +6,7 @@ The application also allows to view the number of uppercase and lowercase letter
 
 To start, go to the AppRunner class.
 Additionally, there is also the AppRunner_WordsSearching class responsible for finding chosen words in the text.
+As an add-on, the application implements a method that finds characters in the text and replaces characters adjacent to the searched characters. To run this method use AppRunner_CharactersReplacement class.
 
 Technologies used in the project are: IDE - IntelliJ Idea Community; Maven; Java - 1.8; TDD; Design pattern - Facade.
 

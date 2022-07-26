@@ -2,7 +2,7 @@ package org.example;
 
 import java.io.FileNotFoundException;
 
-public class AppRunner_Characters_Replacement {
+public class AppRunner_CharactersReplacement {
 
     /*
 
