@@ -1,4 +1,4 @@
-package org.example;
+package Calculations;
 
 import junit.framework.TestCase;
 import org.junit.jupiter.api.Assertions;
@@ -12,8 +12,8 @@ class CalculationsTest extends TestCase {
     @Test
     public void testsIfMethodReturnsCharacterKey_CountsIndividualCharactersOfText() throws FileNotFoundException {
 
-        Calculations calculations = new Calculations();
-        Map<Character, Integer> characterIntegerMap = calculations.countsIndividualCharactersOfText();
+        Characters characters = new Characters();
+        Map<Character, Integer> characterIntegerMap = characters.countsIndividualCharactersOfText();
 
         Character key = null;
 
@@ -30,8 +30,8 @@ class CalculationsTest extends TestCase {
     @Test
     public void testsIfMethodReturnsIntegerValues_CountsIndividualCharactersOfText() throws FileNotFoundException {
 
-        Calculations calculations = new Calculations();
-        Map<Character, Integer> characterIntegerMap = calculations.countsIndividualCharactersOfText();
+        Characters characters = new Characters();
+        Map<Character, Integer> characterIntegerMap = characters.countsIndividualCharactersOfText();
 
         Integer value = null;
 
@@ -48,8 +48,8 @@ class CalculationsTest extends TestCase {
     @Test
     public void testsIfReturnedObjectIsMapOfDifferentSize_CountsIndividualCharactersOfText() throws FileNotFoundException {
 
-        Calculations calculations = new Calculations();
-        Map<Character, Integer> characterIntegerMap = calculations.countsIndividualCharactersOfText();
+        Characters characters = new Characters();
+        Map<Character, Integer> characterIntegerMap = characters.countsIndividualCharactersOfText();
 
         HashMap<Character, Integer> hashMap = new HashMap<>();
         hashMap.put(' ', 80);
@@ -69,8 +69,8 @@ class CalculationsTest extends TestCase {
     @Test
     public void testsIfReturnedObjectIsNotNull_CountsIndividualCharactersOfText() throws FileNotFoundException {
 
-        Calculations calculations = new Calculations();
-        Map<Character, Integer> characterIntegerMap = calculations.countsIndividualCharactersOfText();
+        Characters characters = new Characters();
+        Map<Character, Integer> characterIntegerMap = characters.countsIndividualCharactersOfText();
 
         Assertions.assertNotNull(characterIntegerMap);
 
@@ -79,8 +79,8 @@ class CalculationsTest extends TestCase {
     @Test
     public void testsIfMethodReturnsIntegerValues_CountsNumberOfCharactersWithSpaces() throws FileNotFoundException{
 
-        Calculations calculations = new Calculations();
-        Integer numberOfCharactersWithSpaces = calculations.countsNumberOfCharactersWithSpaces();
+        Characters characters = new Characters();
+        Integer numberOfCharactersWithSpaces = characters.countsNumberOfCharactersWithSpaces();
 
         Assertions.assertNotEquals(12345678, numberOfCharactersWithSpaces);
 
@@ -89,8 +89,8 @@ class CalculationsTest extends TestCase {
     @Test
     public void testsIfReturnedObjectIsNotNull_CountsNumberOfCharactersWithSpaces() throws FileNotFoundException{
 
-        Calculations calculations = new Calculations();
-        Integer numberOfCharactersWithSpaces = calculations.countsNumberOfCharactersWithSpaces();
+        Characters characters = new Characters();
+        Integer numberOfCharactersWithSpaces = characters.countsNumberOfCharactersWithSpaces();
 
         Assertions.assertNotNull(numberOfCharactersWithSpaces);
 
@@ -99,8 +99,8 @@ class CalculationsTest extends TestCase {
     @Test
     public void testsIfMethodReturnsIntegerValues_CountsTotalWordsNumber()throws FileNotFoundException {
 
-        Calculations calculations = new Calculations();
-        Integer totalWordsNumber = calculations.countsTotalWordsNumber();
+        Words words = new Words();
+        Integer totalWordsNumber = words.countsTotalWordsNumber();
 
         Assertions.assertNotEquals(12345678, totalWordsNumber);
 
@@ -109,8 +109,8 @@ class CalculationsTest extends TestCase {
     @Test
     public void testsIfReturnedObjectIsNotNull_CountsTotalWordsNumber()throws FileNotFoundException {
 
-        Calculations calculations = new Calculations();
-        Integer totalWordsNumber = calculations.countsTotalWordsNumber();
+        Words words = new Words();
+        Integer totalWordsNumber = words.countsTotalWordsNumber();
 
         Assertions.assertNotNull(totalWordsNumber);
 
@@ -119,8 +119,8 @@ class CalculationsTest extends TestCase {
     @Test
     public void testsIfMethodReturnsIntegerValues_countsSpacesInText()throws FileNotFoundException {
 
-        Calculations calculations = new Calculations();
-        Integer spacesInText = calculations.countsSpacesInText();
+        Characters characters = new Characters();
+        Integer spacesInText = characters.countsSpacesInText();
 
         Assertions.assertNotEquals(12345678, spacesInText);
 
@@ -129,8 +129,8 @@ class CalculationsTest extends TestCase {
     @Test
     public void testsIfReturnedObjectIsNotNull_countsSpacesInText()throws FileNotFoundException {
 
-        Calculations calculations = new Calculations();
-        Integer spacesInText = calculations.countsSpacesInText();
+        Characters characters = new Characters();
+        Integer spacesInText = characters.countsSpacesInText();
 
         Assertions.assertNotNull(spacesInText);
 
@@ -139,8 +139,8 @@ class CalculationsTest extends TestCase {
     @Test
     public void testsIfMethodReturnsIntegerValues_countsNumberOfCharactersWithoutSpaces()throws FileNotFoundException{
 
-        Calculations calculations = new Calculations();
-        Integer numberOfCharactersWithoutSpaces = calculations.countsNumberOfCharactersWithoutSpaces();
+        Characters characters = new Characters();
+        Integer numberOfCharactersWithoutSpaces = characters.countsNumberOfCharactersWithoutSpaces();
 
         Assertions.assertNotEquals(12345678, numberOfCharactersWithoutSpaces);
 
@@ -149,8 +149,8 @@ class CalculationsTest extends TestCase {
     @Test
     public void testsIfReturnedObjectIsNotNull_countsNumberOfCharactersWithoutSpaces()throws FileNotFoundException {
 
-        Calculations calculations = new Calculations();
-        Integer numberOfCharactersWithoutSpaces = calculations.countsNumberOfCharactersWithoutSpaces();
+        Characters characters = new Characters();
+        Integer numberOfCharactersWithoutSpaces = characters.countsNumberOfCharactersWithoutSpaces();
 
         Assertions.assertNotNull(numberOfCharactersWithoutSpaces);
 
@@ -159,8 +159,8 @@ class CalculationsTest extends TestCase {
     @Test
     public void testsIfMethodReturnsIntegerValues_countsLinesOfTextAll()throws FileNotFoundException{
 
-        Calculations calculations = new Calculations();
-        Integer linesOfTextAll = calculations.countsLinesOfTextAll();
+        Lines lines = new Lines();
+        Integer linesOfTextAll = lines.countsLinesOfTextAll();
 
         Assertions.assertNotEquals(12345678, linesOfTextAll);
 
@@ -169,8 +169,8 @@ class CalculationsTest extends TestCase {
     @Test
     public void testsIfReturnedObjectIsNotNull_countsLinesOfTextAll()throws FileNotFoundException {
 
-        Calculations calculations = new Calculations();
-        Integer linesOfTextAll = calculations.countsLinesOfTextAll();
+        Lines lines = new Lines();
+        Integer linesOfTextAll = lines.countsLinesOfTextAll();
 
         Assertions.assertNotNull(linesOfTextAll);
 
@@ -179,8 +179,8 @@ class CalculationsTest extends TestCase {
     @Test
     public void testsIfMethodReturnsIntegerValues_countsLinesOfTextFull()throws FileNotFoundException{
 
-        Calculations calculations = new Calculations();
-        Integer linesOfTextFull = calculations.countsLinesOfTextFull();
+        Lines lines = new Lines();
+        Integer linesOfTextFull = lines.countsLinesOfTextFull();
 
         Assertions.assertNotEquals(12345678, linesOfTextFull);
 
@@ -189,8 +189,8 @@ class CalculationsTest extends TestCase {
     @Test
     public void testsIfReturnedObjectIsNotNull_countsLinesOfTextFull()throws FileNotFoundException {
 
-        Calculations calculations = new Calculations();
-        Integer linesOfTextFull = calculations.countsLinesOfTextFull();
+        Lines lines = new Lines();
+        Integer linesOfTextFull = lines.countsLinesOfTextFull();
 
         Assertions.assertNotNull(linesOfTextFull);
 
@@ -199,8 +199,8 @@ class CalculationsTest extends TestCase {
     @Test
     public void testsIfMethodReturnsIntegerValues_countsLinesOfTextEmpty()throws FileNotFoundException{
 
-        Calculations calculations = new Calculations();
-        Integer linesOfTextEmpty = calculations.countsLinesOfTextEmpty();
+        Lines lines = new Lines();
+        Integer linesOfTextEmpty = lines.countsLinesOfTextEmpty();
 
         Assertions.assertNotEquals(12345678, linesOfTextEmpty);
 
@@ -209,8 +209,8 @@ class CalculationsTest extends TestCase {
     @Test
     public void testsIfReturnedObjectIsNotNull_countsLinesOfTextEmpty()throws FileNotFoundException{
 
-        Calculations calculations = new Calculations();
-        Integer linesOfTextEmpty = calculations.countsLinesOfTextEmpty();
+        Lines lines = new Lines();
+        Integer linesOfTextEmpty = lines.countsLinesOfTextEmpty();
 
         Assertions.assertNotNull(linesOfTextEmpty);
 

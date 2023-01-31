@@ -14,7 +14,7 @@ public class Main {
         ReportFacade reportFacade = new ReportFacade();
         ReplacementFacade replacementFacade = new ReplacementFacade();
         SurveyFacade surveyFacade = new SurveyFacade();
-        
+
         calculationFacade.getTotalWordsNumber();
         calculationFacade.getNumberOfCharactersWithSpaces();
         calculationFacade.getNumberOfCharactersWithoutSpaces();

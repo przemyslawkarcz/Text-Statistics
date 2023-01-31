@@ -1,4 +1,4 @@
-package org.example;
+package Replacement;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

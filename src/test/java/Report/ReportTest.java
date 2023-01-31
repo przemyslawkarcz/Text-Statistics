@@ -1,4 +1,4 @@
-package org.example;
+package Report;
 
 import junit.framework.TestCase;
 import org.junit.jupiter.api.Assertions;
