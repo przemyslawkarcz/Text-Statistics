@@ -1,7 +1,5 @@
 package Calculations;
 
-import org.example.Calculations;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Collection;
@@ -99,9 +97,9 @@ public class Characters {
 
     protected Integer countsNumberOfCharactersWithoutSpaces() throws FileNotFoundException {
 
-        Calculations calculations = new Calculations();
-        int allCharactersWithSpaces = calculations.countsNumberOfCharactersWithSpaces();
-        int allSpacesInText = calculations.countsSpacesInText();
+        Characters characters = new Characters();
+        int allCharactersWithSpaces = characters.countsNumberOfCharactersWithSpaces();
+        int allSpacesInText = characters.countsSpacesInText();
 
         return allCharactersWithSpaces - allSpacesInText;
     }
