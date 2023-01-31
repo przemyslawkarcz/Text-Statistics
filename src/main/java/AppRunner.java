@@ -4,7 +4,7 @@ import Report.ReportFacade;
 import Survey.SurveyFacade;
 import java.io.IOException;
 
-public class Main {
+public class AppRunner {
 
     public static void main(String[] args) throws IOException {
 
