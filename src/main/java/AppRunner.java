@@ -1,6 +1,5 @@
 import Calculations.CalculationFacade;
 import Replacement.ReplacementFacade;
-import Report.ReportFacade;
 import Survey.SurveyFacade;
 import java.io.IOException;
 
@@ -11,7 +10,6 @@ public class AppRunner {
         System.out.println("* * * Text-Statistics * * *");
 
         CalculationFacade calculationFacade = new CalculationFacade();
-        ReportFacade reportFacade = new ReportFacade();
         ReplacementFacade replacementFacade = new ReplacementFacade();
         SurveyFacade surveyFacade = new SurveyFacade();
 
@@ -27,7 +25,7 @@ public class AppRunner {
         calculationFacade.getNumberOfCapitalLetters();
         calculationFacade.getNumberOfSmallLetters();
         calculationFacade.getIndividualCharactersOfText();
-        reportFacade.getTextStatisticsReport();
+        calculationFacade.getReport();
 
         //* * * Additional String challenge type methods * * *
 

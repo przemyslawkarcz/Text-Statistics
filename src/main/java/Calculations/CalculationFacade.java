@@ -1,6 +1,7 @@
 package Calculations;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Map;
 
 public class CalculationFacade {
@@ -22,7 +23,6 @@ public class CalculationFacade {
 
         }
 
-        //return characterIntegerMap;
     }
 
     public void getNumberOfCharactersWithSpaces() throws FileNotFoundException {
@@ -33,7 +33,6 @@ public class CalculationFacade {
 
         System.out.println("Characters (with spaces): " + totalNumberOfCharacters);
 
-        //return totalNumberOfCharacters;
     }
 
     public void getNumberOfCharactersWithoutSpaces() throws FileNotFoundException {
@@ -43,7 +42,6 @@ public class CalculationFacade {
 
         System.out.println("Characters (without spaces): " + numberOfCharactersWithoutSpaces);
 
-        //return numberOfCharactersWithoutSpaces;
     }
 
     public void getLinesOfTextAll() throws FileNotFoundException {
@@ -53,7 +51,6 @@ public class CalculationFacade {
 
         System.out.println("Rows (all): " + linesOfTextAll);
 
-        //return linesOfTextAll;
     }
 
     public void getLinesOfTextFull() throws FileNotFoundException {
@@ -63,7 +60,6 @@ public class CalculationFacade {
 
         System.out.println("Rows (with text): " + linesOfTextFull);
 
-        //return linesOfTextFull;
     }
 
     public void getLinesOfTextEmpty() throws FileNotFoundException {
@@ -73,7 +69,6 @@ public class CalculationFacade {
 
         System.out.println("Rows (empty): " + linesOfTextEmpty);
 
-        //return linesOfTextEmpty;
     }
 
     public void getOriginalTextMappedToLines() throws FileNotFoundException {
@@ -91,7 +86,6 @@ public class CalculationFacade {
 
         System.out.println("\nWords: " + totalWordsNumber);
 
-        //return totalWordsNumber;
     }
 
     public void getNumberOfVowels() throws FileNotFoundException {
@@ -101,7 +95,6 @@ public class CalculationFacade {
 
         System.out.println("Vowels: " + numberOfVowels);
 
-        //return numberOfVowels;
     }
 
     public void getNumberOfConsonants() throws FileNotFoundException {
@@ -111,7 +104,6 @@ public class CalculationFacade {
 
         System.out.println("Consonants: " + numberOfConsonants);
 
-        //return numberOfConsonants;
     }
 
     public void getNumberOfSpecialSigns() throws FileNotFoundException {
@@ -121,7 +113,6 @@ public class CalculationFacade {
 
         System.out.println("Special signs: " + numberOfSpecialSigns);
 
-        //return numberOfSpecialSigns;
     }
 
     public void getNumberOfCapitalLetters() throws FileNotFoundException {
@@ -131,7 +122,6 @@ public class CalculationFacade {
 
         System.out.println("Uppercase letters: " + numberOfCapitalLetters);
 
-        //return numberOfCapitalLetters;
     }
 
     public void getNumberOfSmallLetters() throws FileNotFoundException {
@@ -141,7 +131,13 @@ public class CalculationFacade {
 
         System.out.println("Lowercase letters: " + numberOfSmallLetters);
 
-        //return numberOfSmallLetters;
+    }
+
+    public void getReport() throws IOException {
+
+        ReportFinal reportFinal = new ReportFinal();
+        reportFinal.createsTextStatisticsReport();
+
     }
 
 }
